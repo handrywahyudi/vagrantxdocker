@@ -15,3 +15,8 @@ wget https://releases.hashicorp.com/terraform/1.0.4/terraform_1.0.4_linux_amd64.
 unzip terraform_1.0.4_linux_amd64.zip
 mv ./terraform /usr/bin
 
+# install kubectl
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/kubectl
+
